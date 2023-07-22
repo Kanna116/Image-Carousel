@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="nav">
+            <a href="##" onclick="history.go(-1)">
+                <i class='bx bx-arrow-back'></i>Back to Home</a>
+        </div>
+        <div class="project-details">
+            <h1>Image Carousel</h1>
+            <p>A common interactive design which can be used in any UI deisgn to showcase multiple images as a carousel.
+            </p>
+            <div class="links">
+                <a href="https://github.com/Kanna116/Image-Carousel" target="_blank"><i
+                        class='bx bxl-github'></i><span>code</span></i></a>
+                <a href="https://www.figma.com/file/PuMOaZZrI6Zy73A7wCQ2cW/Image-carousel?type=design&node-id=0%3A1&mode=design&t=nOkEK4t8XznCkf59-1"
+                    target="_blank"><i class='bx bxl-figma'><span>design</span></i></a>
+                <a href="https://www.figma.com/proto/PuMOaZZrI6Zy73A7wCQ2cW/Image-carousel?page-id=0%3A1&type=design&node-id=1-4&viewport=135%2C291%2C0.34&t=8VcNnprEk3klqCxl-1&scaling=scale-down&starting-point-node-id=1%3A4&mode=design"
+                    target="_blank"><i class='bx bxl-figma'><span>prototype</span></i></a>
+            </div>
+        </div>
+
+        <div class="thanking">
+            <p>Thank you for your support<i class='bx bxs-heart'></i></p>
+        </div>
+        <div class="note">
+            <p>Click it || Enjoy it..</p>
+        </div>
+        <div id="carousel">
+            <div id="image-container">
+                <div class="pic"><img src="images/image (1).jpg" alt=""></div>
+                <div class="pic"><img src="images/image (2).jpg" alt=""></div>
+                <div class="pic"><img src="images/image (3).jpg" alt=""></div>
+                <div class="pic"><img src="images/image (4).jpg" alt=""></div>
+                <div class="pic"><img src="images/image (5).jpg" alt=""></div>
+                <div class="pic"><img src="images/image (6).jpg" alt=""></div>
+            </div>
+            <div id="button-container">
+                <button class="button" onclick="prevImage()"><i class='bx bx-chevron-left'></i></button>
+                <button class="button" onclick="nextImage()"><i class='bx bx-chevron-right'></i></button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

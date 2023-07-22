@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100vw;
+    height: 100vh;
+    background-color: #669bbc;
+    display: grid;
+    place-items: center;
+
+}
+
+/* navigation  */
+#nav {
+    z-index: 100;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 30px;
+}
+
+#nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    /* display: block; */
+}
+
+#nav a i {
+    margin-right: 20px;
+}
+
+/* project details  */
+.project-details {
+    z-index: 100;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 20px;
+    color: #fff;
+
+}
+
+.project-details h1 {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.project-details p {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.project-details .links {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.project-details .links a {
+    font-size: 28px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all .2s ease;
+    margin-bottom: 5px;
+    transform-origin: left;
+
+}
+
+.project-details .links a span {
+    font-size: 12px;
+    padding: 0 10px;
+    text-transform: capitalize;
+}
+
+.project-details .links a:hover {
+    color: #d62828;
+    transform: translateX(10px) scale(1.3);
+}
+
+/* thanking   */
+
+.thanking {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+}
+
+.thanking p {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 500;
+    color: #fff;
+
+}
+
+.thanking p i {
+    margin-left: 10px;
+}
+
+/* note  */
+.note {
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+
+}
+
+/* carousel  */
+#carousel {
+    width: 40%;
+    min-width: 300px;
+    height: 60%;
+    /* background-color: #fff; */
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+#image-container {
+    width: 95%;
+    height: 80%;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+/* images  */
+.pic {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transition: all .5s ease;
+}
+
+.pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#button-container {
+    width: 95%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* controls  */
+.button {
+    height: 100%;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ef233c;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.button i {
+    font-size: 30px;
+}
